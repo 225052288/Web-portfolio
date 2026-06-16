@@ -164,13 +164,23 @@ def main(page: ft.Page):
 
         ring = ft.Container(
             width=180, height=180, border_radius=90,
-            border=ft.border.all(2, "#58a6ff"),
+            border=ft.Border(
+                top=ft.BorderSide(2, "#58a6ff"),
+                right=ft.BorderSide(2, "#58a6ff"),
+                bottom=ft.BorderSide(2, "#58a6ff"),
+                left=ft.BorderSide(2, "#58a6ff"),
+            ),
             opacity=0.0, animate_opacity=ft.animation.Animation(800, "easeOut"),
             shadow=ft.BoxShadow(blur_radius=20, color="#58a6ff44", spread_radius=2),
         )
         ring2 = ft.Container(
             width=200, height=200, border_radius=100,
-            border=ft.border.all(1, "#58a6ff66"),
+            border=ft.Border(
+                top=ft.BorderSide(1, "#58a6ff66"),
+                right=ft.BorderSide(1, "#58a6ff66"),
+                bottom=ft.BorderSide(1, "#58a6ff66"),
+                left=ft.BorderSide(1, "#58a6ff66"),
+            ),
             opacity=0.0, animate_opacity=ft.animation.Animation(1000, "easeOut"),
         )
         photo = ft.Container(
