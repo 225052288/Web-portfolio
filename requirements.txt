@@ -1,2 +1,2 @@
-flet
+flet==24.0.1
 flet-video
